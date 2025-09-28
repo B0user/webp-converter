@@ -10,7 +10,9 @@ const port = 5009;
 
 app.use(
   cors({
-    origin: "http://localhost:3009",
+    origin: [
+      'https://webp-converter.tools.medcore.kz'
+    ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   })
 );
